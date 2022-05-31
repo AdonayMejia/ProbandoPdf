@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alcaldia.soyapango.app.MainActivity">
+
+ <FrameLayout
+     android:id="@+id/fragmentContainer"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"></FrameLayout>
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+       android:id="@+id/bnv_Main"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="@color/colorPrimary"
+        app:mbn_circleColor="#f2f2f2"
+        app:mbn_selectedIconColor="@color/colorPrimary"
+        app:mbn_defaultIconColor="#f2f2f2"
+        app:mbn_countTextColor="@color/white"
+        app:mbn_countBackgroundColor="#ff6f00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.etebarian.meowbottomnavigation.MeowBottomNavigation>
+
+</RelativeLayout>

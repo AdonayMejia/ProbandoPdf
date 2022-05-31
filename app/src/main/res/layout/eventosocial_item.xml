@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewItemSocialEvent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageMore"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_card_height"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_below="@id/imageMore"
+            android:layout_marginLeft="@dimen/normalPadding"
+            android:layout_marginTop="@dimen/top_text_card"
+            android:layout_marginRight="@dimen/normalPadding"
+            android:textColor="@color/darkTextColor"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/txtNombre"
+            android:layout_marginLeft="@dimen/normalPadding"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/location" />
+
+        <TextView
+
+            android:id="@+id/txtLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNombre"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/location"
+            android:text="Plac"
+            android:textColor="@color/dashboard_subtitle"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/img_calendar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/location"
+            android:layout_marginLeft="@dimen/normalPadding"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/img_calendar"
+            android:text="date"
+            android:textColor="@color/dashboard_subtitle"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
